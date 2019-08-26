@@ -1,0 +1,102 @@
+/* [NAVIGATION BAR BEGIN] */
+
+/*  ---------------------- From style.css -----------------------  */
+.mainmenu-area {
+  background: none repeat scroll 0 0 #fbfbfb;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+  z-index: 999;
+}
+
+.mainmenu-area ul.navbar-nav li.nav-item a.nav-link {
+  color: #6e6a6a;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.mainmenu-area ul.navbar-nav li.nav-item:hover>a.nav-link,
+.mainmenu-area ul.navbar-nav li.active>a.nav-link {
+  background: #5a88ca;
+  color: #FFF;
+}
+
+
+/*-----------------------------------Huan Change-----------------------------------------
+.mainmenu-area ul.navbar-nav li.nav-item a.nav-link:focus {
+  color: #FFF;
+}
+-------------------------------------Huan Change---------------------------------------*/
+
+
+
+/*  -------------------------------------------------------------  */
+
+.navbar .navbar-toggler {
+  border: none;
+}
+
+.navbar form.form-inline {
+  position: relative;
+  border: 1pt #e0e0e0 solid;
+  background: #fff;
+  padding: 0;
+  overflow: hidden;
+  height: 35px;
+  width: 100%;
+}
+
+.nav-item.dropdown .dropdown-menu {
+  margin-top: 0.5rem;
+  margin-right: -1rem; 
+}
+
+.nav-item.searchbox div {
+  width: 320px;
+}
+
+.nav-item.searchbox form.form-inline input[type=search] {
+  position: absolute;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  background: inherit;
+  margin: 0;
+}
+
+.nav-item.searchbox form.form-inline button[type=submit] {
+  position: absolute;
+  right: 0;
+}
+
+/* #category-dropdown:hover ~ .dropdown-menu {
+  display: block;
+} */
+
+@media only screen and (min-width: 992px) {
+  .is-sticky .nav-hidden {
+    display: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .nav-item.dropdown .dropdown-menu {
+    margin-top: 0rem;
+    margin-right: 0rem; 
+  }
+  
+  .nav-item.searchbox div {
+    width: 100%;
+    display: block !important;
+  }
+
+  #searchbox-dropdown {
+    display: none;
+  }
+}
+
+
+.sticky-wrapper {
+  height: auto !important;
+}

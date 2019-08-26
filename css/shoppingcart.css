@@ -1,0 +1,137 @@
+.shopping-item {
+    border: 1px solid #8080ff;
+    float: right;
+    font-size: 18px;
+    margin-top: 40px;
+    /* padding: 10px; */
+    position: relative;
+}
+  
+.shopping-item a {
+    color: #666;
+    display: block;
+    padding: 10px;
+}
+
+.cart-amunt {
+    color: #5a88ca;
+    font-weight: 700;
+}
+
+.product-count {
+    background: none repeat scroll 0 0 #5a88ca;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 10px;
+    height: 20px;
+    padding-top: 2px;
+    position: absolute;
+    right: -10px;
+    text-align: center;
+    top: -10px;
+    width: 20px;
+}
+
+.shopping-item:hover {
+    background: none repeat scroll 0 0 #5a88ca;
+    border-color: #000;
+}
+
+.shopping-item:hover a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.shopping-item:hover .cart-amunt {
+    color: #fff;
+}
+
+.shopping-item:hover .product-count {
+    background: none repeat scroll 0 0 #000;
+}
+
+/* ===================================================================================== */
+
+.shopping-cart.shopping-item {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    height: 65px;
+    width: 65px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 1pt #8080ff solid;
+    text-align: center;
+    z-index: 999;
+}
+
+.shopping-cart.shopping-item a {
+    padding: 4px;
+    height: 100%;
+}
+
+.shopping-cart.shopping-item i {
+    display: block;
+    position: relative;
+    width: 33.5px;
+    margin: 0 auto;
+    text-align: center;
+    color: .8080ff;
+    font-size: 2em;
+}
+
+.shopping-cart.shopping-item span.cart-amunt {
+    display: block;
+    font-size: 8pt; 
+}
+
+.shopping-cart.shopping-item .hidden {
+    display: none;
+}
+
+.shopping-cart.shopping-item:before {
+    content: "";
+    position: absolute;
+    margin: 4px;
+    display: block;
+    height: 55px;
+    width: 55px;
+    border: 1pt #8080ff solid;
+    z-index: -1;
+}
+
+.shopping-cart.shopping-item .product-count {
+    border-radius: 0; 
+    color: #fff;
+    display: inline-block;
+    font-size: 10px;
+    height: 13px;
+    position: absolute;
+    right: -1px;
+    text-align: center;
+    top: -13px;
+    width: 65px;
+    line-height: 10px
+}
+  
+.shopping-cart.shopping-item a:hover {
+    text-decoration: none;
+}
+
+.shopping-cart.shopping-item:hover {
+    background-color: #5a88ca;
+    border-color: #000;
+}
+
+.shopping-cart.shopping-item:hover:before {
+    border-color: #000;
+}
+
+.single-shop-product  {
+  padding: 15px;
+  margin: 5px;
+  border: 1pt #e0e0e0 solid;
+  box-shadow: 1px 1px 7px 1px #e0e0e0a0;
+}
